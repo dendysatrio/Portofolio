@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Dendy Satrio Wibowo — Data Analyst Portfolio. Transforming complex datasets into structured insights and actionable recommendations.">
+    <meta name="keywords" content="Data Analyst, Portfolio, Python, SQL, Tableau, Dendy Satrio">
+    <meta name="author" content="Dendy Satrio Wibowo">
+    <title>Dendy Satrio Wibowo | Data Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">DS<span class="accent">.</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-content">
+            <!-- Left: Profile Picture -->
+            <div class="hero-left">
+                <div class="hero-avatar">
+                    <!-- Replace the div below with: <img src="your-photo.jpg" alt="Dendy Satrio Wibowo" class="avatar-img"> -->
+                    <div class="avatar-placeholder">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- Right: Name & Info -->
+            <div class="hero-right">
+                <div class="hero-greeting">Hello, I'm</div>
+                <h1 class="hero-name">Dendy Satrio<br><span class="accent">Wibowo</span></h1>
+                <div class="hero-title">
+                    <span class="title-bracket">&lt;</span>
+                    <span class="title-text">Data Analyst</span>
+                    <span class="title-bracket">/&gt;</span>
+                </div>
+                <div class="hero-location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Malang, Indonesia
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">01.</span> About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a <strong>Sociology graduate</strong> with a strong analytical foundation,
+                        guided by <em>integrity, analytical thinking, and adaptability</em>.
+                    </p>
+                    <p>
+                        I completed an end-to-end data analysis project in the
+                        <strong>RevoU Full Stack Data Analytics</strong> program, where I learned to translate
+                        complex data and business problems into structured insights and clear recommendations.
+                    </p>
+                    <p>
+                        My leadership experience as <strong>Vice Chairperson</strong> of the Sociology Education
+                        Student Association strengthened my coordination and decision-making capabilities.
+                        I'm prepared to contribute effectively in a data analytics role by delivering
+                        evidence-based insights that support organizational goals.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">120K+</div>
+                        <div class="stat-label">Records Analyzed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Tools Mastered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">End-to-End Project</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">02.</span> Skills & Tools
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-reveal>
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3>SQL</h3>
+                    <p>Data querying, joins, aggregations, and database management</p>
+                </div>
+                <div class="skill-card" data-reveal>
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                            <line x1="14" y1="4" x2="10" y2="20" />
+                        </svg>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Data analysis, cleaning, and visualization with pandas & matplotlib</p>
+                </div>
+                <div class="skill-card" data-reveal>
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <line x1="3" y1="9" x2="21" y2="9" />
+                            <line x1="9" y1="21" x2="9" y2="9" />
+                        </svg>
+                    </div>
+                    <h3>Tableau</h3>
+                    <p>Interactive dashboards and data storytelling</p>
+                </div>
+                <div class="skill-card" data-reveal>
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <line x1="3" y1="9" x2="21" y2="9" />
+                            <line x1="3" y1="15" x2="21" y2="15" />
+                            <line x1="9" y1="3" x2="9" y2="21" />
+                            <line x1="15" y1="3" x2="15" y2="21" />
+                        </svg>
+                    </div>
+                    <h3>Spreadsheets</h3>
+                    <p>Advanced formulas, pivot tables, and data modeling in Excel & Google Sheets</p>
+                </div>
+                <div class="skill-card" data-reveal>
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 6v6l4 2" />
+                        </svg>
+                    </div>
+                    <h3>Google Colab</h3>
+                    <p>Cloud-based Python notebooks for collaborative data analysis</p>
+                </div>
+                <div class="skill-card" data-reveal>
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h3>Teamwork</h3>
+                    <p>Cross-functional collaboration, coordination, and communication</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">03.</span> Education
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>RevoU</h3>
+                            <span class="timeline-date">Oct 2025 – Feb 2026</span>
+                        </div>
+                        <div class="timeline-role">Full-stack Data Analytics</div>
+                        <p>Completed intensive training covering end-to-end data analysis processes, including data
+                            cleaning, exploration, analysis, and visualization. Utilized SQL, Python, Tableau, and
+                            spreadsheets to translate complex datasets into actionable recommendations.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Universitas Negeri Malang</h3>
+                            <span class="timeline-date">Aug 2018 – Jun 2025</span>
+                        </div>
+                        <div class="timeline-role">Bachelor of Education in Sociology</div>
+                        <p>GPA: 3.01</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">04.</span> Projects
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1: Airline Passenger Satisfaction (DEEP) -->
+                <div class="project-card featured" data-reveal>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Project" aria-label="View Project">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-badge">⭐ Featured</div>
+                    <h3 class="project-title">🛫 Airline Passenger Satisfaction Analysis</h3>
+                    <p class="project-description">
+                        End-to-end data analysis on 129,000+ airline passenger records across 24 variables.
+                        Performed data cleaning, missing value treatment, outlier assessment, and exploratory
+                        analysis to identify key factors driving passenger dissatisfaction. Built an interactive
+                        Tableau dashboard for stakeholder reporting and developed data-driven recommendations
+                        for service improvement prioritization.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Tableau</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Data Cleaning</span>
+                        <span class="tag">EDA</span>
+                        <span class="tag">Data Visualization</span>
+                    </div>
+                    <div class="project-context">
+                        <span>RevoU DEEP Project</span>
+                        <span>Oct 2025 – Feb 2026</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Credit Card Data Analysis -->
+                <div class="project-card" data-reveal>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
+                                <line x1="1" y1="10" x2="23" y2="10" />
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Project" aria-label="View Project">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">💳 Credit Card Customer Segmentation</h3>
+                    <p class="project-description">
+                        Prepared and cleaned credit card and user datasets for RevoBank Indonesia to support
+                        customer segmentation analysis. Performed data type validation, categorical value
+                        standardization, missing value treatment, duplicate removal, and business rule
+                        filtering including expired card exclusion and credit limit validation across 5,500+
+                        card records and 2,000 user profiles.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Data Cleaning</span>
+                        <span class="tag">Customer Segmentation</span>
+                    </div>
+                    <div class="project-context">
+                        <span>RevoU Python Module</span>
+                        <span>Nov 2025</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Data Visualization -->
+                <div class="project-card" data-reveal>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="18" y1="20" x2="18" y2="10" />
+                                <line x1="12" y1="20" x2="12" y2="4" />
+                                <line x1="6" y1="20" x2="6" y2="14" />
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Project" aria-label="View Project">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">📊 Personal Expense Tracker Visualization</h3>
+                    <p class="project-description">
+                        Designed and developed interactive data visualizations for a personal expense
+                        tracker with realistic merchant data. Created clear and insightful charts to
+                        track spending patterns, identify trends, and support personal financial
+                        decision-making through effective visual storytelling.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Google Sheets</span>
+                        <span class="tag">Data Visualization</span>
+                        <span class="tag">Dashboard Design</span>
+                        <span class="tag">Financial Analysis</span>
+                    </div>
+                    <div class="project-context">
+                        <span>RevoU Data Viz Module</span>
+                        <span>Nov 2025</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: E-Commerce Data Analysis -->
+                <div class="project-card" data-reveal>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="9" cy="21" r="1" />
+                                <circle cx="20" cy="21" r="1" />
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Project" aria-label="View Project">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">🛒 TokoBli E-Commerce Data Analysis</h3>
+                    <p class="project-description">
+                        Conducted comprehensive e-commerce data analysis on TokoBli marketplace data.
+                        Performed data cleaning, exploration, and sales performance evaluation to uncover
+                        business insights. Delivered actionable recommendations through structured
+                        presentation and team lead simulation exercises.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Google Sheets</span>
+                        <span class="tag">Data Cleaning</span>
+                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Business Insights</span>
+                    </div>
+                    <div class="project-context">
+                        <span>RevoU Spreadsheet Module</span>
+                        <span>Oct 2025</span>
+                    </div>
+                </div>
+
+                <!-- Project 5: SQL Data Analysis -->
+                <div class="project-card" data-reveal>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Project" aria-label="View Project">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">🗄️ SQL Data Analysis</h3>
+                    <p class="project-description">
+                        Applied SQL querying techniques to extract, filter, and analyze data from
+                        relational databases. Demonstrated proficiency in writing complex queries
+                        including JOINs, aggregations, subqueries, and window functions to derive
+                        meaningful business insights from structured datasets.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">Database Querying</span>
+                        <span class="tag">Data Analysis</span>
+                        <span class="tag">JOINs & Aggregations</span>
+                    </div>
+                    <div class="project-context">
+                        <span>RevoU SQL Module</span>
+                        <span>Nov 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">05.</span> Experience
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Vice Chairperson</h3>
+                            <span class="timeline-date">Feb 2020 – Feb 2021</span>
+                        </div>
+                        <div class="timeline-role">Sociology Education Student Association — Universitas Negeri Malang
+                        </div>
+                        <ul>
+                            <li>Led internal coordination and program planning by aligning teams across divisions</li>
+                            <li>Oversaw division-level activities by monitoring program execution and resolving
+                                coordination issues</li>
+                            <li>Facilitated communication between executive members and division representatives</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Staff Member — Talent & Interest Division</h3>
+                            <span class="timeline-date">Feb 2019 – Feb 2020</span>
+                        </div>
+                        <div class="timeline-role">Sociology Education Student Association — Universitas Negeri Malang
+                        </div>
+                        <ul>
+                            <li>Supported division programs by contributing to planning and on-site execution</li>
+                            <li>Collaborated with cross-division teams to implement recurring student initiatives</li>
+                            <li>Managed operational and administrative support for student organization programs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">06.</span> Get in Touch
+            </h2>
+            <div class="contact-content">
+                <p class="contact-text">
+                    I'm currently looking for opportunities in data analytics.
+                    Whether you have a question or just want to say hi, feel free to reach out!
+                </p>
+                <div class="contact-grid">
+                    <a href="mailto:satriodendy41@gmail.com" class="contact-card" data-reveal>
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">satriodendy41@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dendysatrio" target="_blank" rel="noopener"
+                        class="contact-card" data-reveal>
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">dendysatrio</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/dendysatrio" target="_blank" rel="noopener" class="contact-card"
+                        data-reveal>
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">dendysatrio</span>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/dendy_str" target="_blank" rel="noopener" class="contact-card"
+                        data-reveal>
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Instagram</span>
+                            <span class="contact-value">@dendy_str</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by <span class="accent">Dendy Satrio Wibowo</span></p>
+            <p class="footer-year">© 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
