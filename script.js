@@ -289,6 +289,7 @@ const projectData = [
         ],
         links: [
             { label: "GitHub", url: "https://github.com/dendysatrio/sql-analysis", primary: true },
+            { label: "View Queries", url: "https://github.com/dendysatrio/sql-analysis/blob/main/SQL%20Query.sql", primary: false },
             { label: "View Deck", url: "https://github.com/dendysatrio/sql-analysis/blob/main/%5BSQL%20OCT25%5Ddendy_satrio_intermediate.pdf", primary: false }
         ]
     }
