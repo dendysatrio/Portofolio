@@ -44,14 +44,7 @@
             <!-- Left: Profile Picture -->
             <div class="hero-left">
                 <div class="hero-avatar">
-                    <!-- Replace the div below with: <img src="your-photo.jpg" alt="Dendy Satrio Wibowo" class="avatar-img"> -->
-                    <div class="avatar-placeholder">
-                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                            <circle cx="12" cy="7" r="4" />
-                        </svg>
-                    </div>
+                    <img src="profile.png" alt="Dendy Satrio Wibowo" class="avatar-img">
                 </div>
             </div>
             <!-- Right: Name & Info -->
@@ -74,6 +67,7 @@
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
                     <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                    <a href="https://github.com/dendysatrio/Portofolio/raw/main/CV%20ATS%20Dendy%20Satrio.pdf" class="btn btn-outline" target="_blank" rel="noopener">Download CV</a>
                 </div>
             </div>
         </div>
@@ -94,7 +88,7 @@
                 </div>
                 <div class="about-stats">
                     <div class="stat-card">
-                        <div class="stat-number">120K+</div>
+                        <div class="stat-number">142K+</div>
                         <div class="stat-label">Records Analyzed</div>
                     </div>
                     <div class="stat-card">
@@ -103,7 +97,7 @@
                     </div>
                     <div class="stat-card">
                         <div class="stat-number">1</div>
-                        <div class="stat-label">End-to-End Project</div>
+                        <div class="stat-label">DEEP Capstone</div>
                     </div>
                 </div>
             </div>
@@ -245,7 +239,7 @@
                             </svg>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link" title="View Project" aria-label="View Project">
+                            <a href="https://github.com/dendysatrio/airline-passenger-satisfaction" class="project-link" title="View Project" aria-label="View Project">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
@@ -289,7 +283,7 @@
                             </svg>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link" title="View Project" aria-label="View Project">
+                            <a href="https://github.com/dendysatrio/credit-card-segmentation" class="project-link" title="View Project" aria-label="View Project">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
@@ -332,7 +326,7 @@
                             </svg>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link" title="View Project" aria-label="View Project">
+                            <a href="https://github.com/dendysatrio/expense-tracker-viz" class="project-link" title="View Project" aria-label="View Project">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
@@ -373,7 +367,7 @@
                             </svg>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link" title="View Project" aria-label="View Project">
+                            <a href="https://github.com/dendysatrio/tokobli-analysis" class="project-link" title="View Project" aria-label="View Project">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
@@ -414,7 +408,7 @@
                             </svg>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link" title="View Project" aria-label="View Project">
+                            <a href="https://github.com/dendysatrio/sql-analysis" class="project-link" title="View Project" aria-label="View Project" target="_blank" rel="noopener">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
@@ -572,6 +566,34 @@
             <p class="footer-year">© 2026</p>
         </div>
     </footer>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true">
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+            <div class="modal-badge" id="modalBadge"></div>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <ul class="modal-findings" id="modalFindings"></ul>
+            <div class="modal-image-wrap" id="modalImageWrap">
+                <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous image">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <img id="modalImage" src="" alt="" class="modal-image">
+                <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next image">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+            <div class="modal-tags" id="modalTags"></div>
+            <div class="modal-footer">
+                <div class="modal-context-row">
+                    <span id="modalContext"></span>
+                    <span id="modalDate"></span>
+                </div>
+                <div class="modal-links" id="modalLinks"></div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
