@@ -659,7 +659,7 @@ img {
     color: var(--accent);
     font-weight: 500;
     white-space: nowrap;
-    font-family: 'Courier New', monospace;
+    font-family: var(--font);
 }
 
 .timeline-role {
