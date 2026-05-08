@@ -27,9 +27,11 @@ Designed to present data analytics work in a clean, interactive format.
 
 | Project | Tools | Links |
 |---|---|---|
+| 👥 PeopleU SaaS Lead Clustering ⭐ | Python, KMeans, BigQuery, Tableau | GitHub |
+| 💰 RevoFin Loan Portfolio Analysis | SQL, BigQuery | GitHub |
 | ✈️ Airline Passenger Satisfaction | Python, Tableau, Pandas | GitHub · Tableau · Report |
 | 💳 Credit Card Customer Segmentation | Python, Pandas, NumPy | GitHub |
-| 📊 Personal Expense Tracker Visualization | Tableau, Google Sheets | GitHub · Tableau |
+| 📊 Personal Expense Tracker Visualization | Tableau | GitHub · Tableau |
 | 🛒 TokoBli E-Commerce Analysis | Google Sheets | GitHub · Deck |
 | 🗄️ SQL Sales Performance Analysis | SQL, BigQuery | GitHub · Deck |
 
