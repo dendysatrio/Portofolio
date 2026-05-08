@@ -206,6 +206,30 @@ sections.forEach(section => sectionObserver.observe(section));
 const projectData = [
     {
         findings: [
+            "Segmented 3,397 B2B SaaS leads into 3 distinct clusters using KMeans",
+            "Cluster 1 (SMB): 60.7% CVR — highest conversion rate segment",
+            "CPC outperforms Organic Social with 6.93 vs 3.20 ROI ratio across channels",
+            "Reallocation of underperforming channel budgets projected to increase GMV by 18.8%"
+        ],
+        images: [],
+        links: [
+            { label: "GitHub", url: "https://github.com/dendysatrio/peopleu-saas-clustering", primary: true }
+        ]
+    },
+    {
+        findings: [
+            "Analyzed a $2.74B loan portfolio across 172,111 borrowers in 8 origination cohorts",
+            "2013 cohort flagged as underperformer — TKB30 of 0.9985 vs 99.99% portfolio average",
+            "Three compounding risk factors: 67.58% debt consolidation concentration, 17% avg interest rate, $77K avg income",
+            "Recommended stricter DTI thresholds, risk-based pricing tiers, and enhanced income verification"
+        ],
+        images: [],
+        links: [
+            { label: "GitHub", url: "https://github.com/dendysatrio/revofin-loan-portfolio", primary: true }
+        ]
+    },
+    {
+        findings: [
             "56.6% of 129,487 passengers were dissatisfied or neutral — majority at risk",
             "Digital Experience Gap (0.92) was the #1 driver of dissatisfaction",
             "Physical Comfort (0.78) and Service Quality (0.67) followed closely",
